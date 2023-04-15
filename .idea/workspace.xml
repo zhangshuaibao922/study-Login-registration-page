@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d168d431-a15c-4a7b-8429-200540dd5b0c" name="Changes" comment="完成注册功能">
-      <change afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/entity/AccountUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/interceptor/Authorizeinterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study-project-frontend/src/components/welcome/ForgetPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/controller/AuthorizeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/controller/AuthorizeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/mapper/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/mapper/AccountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/service/AuthorizeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/service/AuthorizeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-backend/src/main/java/com/example/service/impl/AuthorizeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-frontend/src/components/welcome/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-frontend/src/components/welcome/LoginPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-frontend/src/components/welcome/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-frontend/src/components/welcome/RegisterPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-frontend/src/net/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-frontend/src/net/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-frontend/src/views/IndexView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-frontend/src/views/IndexView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-project-frontend/src/views/WelcomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/study-project-frontend/src/views/WelcomeView.vue" afterDir="false" />
-    </list>
+    <list default="true" id="d168d431-a15c-4a7b-8429-200540dd5b0c" name="Changes" comment="前后端分离的登陆注册忘记密码功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/study-project-backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -129,7 +110,7 @@
       <workItem from="1681383417422" duration="1816000" />
       <workItem from="1681389319704" duration="33697000" />
       <workItem from="1681483091397" duration="1792000" />
-      <workItem from="1681485192334" duration="23732000" />
+      <workItem from="1681485192334" duration="28733000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681383505111</created>
@@ -159,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681531317075</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="前后端分离的登陆注册忘记密码功能">
+      <created>1681562345338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681562345338</updated>
+    </task>
+    <task id="LOCAL-00006" summary="前后端分离的登陆注册忘记密码功能">
+      <created>1681562493325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681562493325</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +179,8 @@
     <MESSAGE value="配置登录验证接口返回JSON数据" />
     <MESSAGE value="完成注册相关内容" />
     <MESSAGE value="完成注册功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成注册功能" />
+    <MESSAGE value="前后端分离的登陆注册忘记密码功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="前后端分离的登陆注册忘记密码功能" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
