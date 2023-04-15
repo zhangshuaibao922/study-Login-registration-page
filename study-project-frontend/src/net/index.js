@@ -18,7 +18,7 @@ function post(url, data,success,failure=defaultFailure,error = defaultError) {
     }).catch(error)
 }
 function get(data,success,failure=defaultFailure,error = defaultError) {
-    axios.post(data,{
+    axios.get(data,{
         withCredentials:true
     }).then(({data})=>{
         if(data.success)

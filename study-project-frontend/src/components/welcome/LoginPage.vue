@@ -22,7 +22,7 @@
                 <el-checkbox v-model="form.remember" label="记住我"/>
             </el-col>
             <el-col :span="12" style="text-align: right">
-                <el-checkbox v-model="checked1" label="忘记密码"/>
+                <el-link @click="router.push('/forget')">忘记密码?</el-link>
             </el-col>
         </el-row>
 
@@ -42,8 +42,11 @@
 import {User,Lock} from "@element-plus/icons-vue"
 import {reactive} from "vue";
 import {ElMessage} from "element-plus";
-import {post} from "@/net";
+import {get, post} from "@/net";
 import router from "@/router";
+import {useStore} from "@/stores/counter";
+
+const store =useStore()
 
 const form =reactive({
     username:'',
@@ -60,10 +63,16 @@ const login = () => {
           remember:form.remember
       },(message)=>{
           ElMessage.success(message)
-          router.push('/index')
+          get('/api/user/me', (message) => {
+              store.auth.user=message
+              router.push('/index')
+          }, () => {
+              store.auth.user=null
+          })
       })
   }
 }
+
 </script>
 
 <style scoped>

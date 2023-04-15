@@ -54,7 +54,10 @@
                             </el-input>
                         </el-col>
                         <el-col :span="6">
-                            <el-button type="success" @click="validateEmail" :disabled="!isEmailValid">获取验证码</el-button>
+                            <el-button type="success" @click="validateEmail"
+                                       :disabled="!isEmailValid || coldTime > 0">
+                                {{ coldTime > 0 ? '请稍后 ' + coldTime + '秒' : ' 获取验证码' }}
+                            </el-button>
                         </el-col>
                     </el-row>
                 </el-form-item>
@@ -127,6 +130,7 @@ const rules = {
 }
 const formRef = ref()
 const isEmailValid=ref(false)
+const coldTime=ref(0)
 const onValidate=(prop,isValid)=>{
     if(prop==='email')
         isEmailValid.value=isValid
@@ -141,7 +145,7 @@ const register = () => {
                 code:form.code
             },(Message)=>{
                 ElMessage.success(Message)
-                router.push("/")
+                router.push('/')
             })
         }else{
             ElMessage.warning("请完整填写注册内容")
@@ -149,10 +153,15 @@ const register = () => {
     })
 }
 const validateEmail = () => {
-  post("/api/auth/valid-email",{
+    coldTime.value=60
+  post("/api/auth/valid-register-email",{
       email:form.email
   },(Message)=>{
       ElMessage.success(Message)
+      setInterval(() => coldTime.value--, 1000)
+  },(Message)=>{
+      ElMessage.warning(Message)
+      coldTime.value = 0
   })
 }
 
