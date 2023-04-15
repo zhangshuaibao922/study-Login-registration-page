@@ -110,7 +110,7 @@
       <workItem from="1681383417422" duration="1816000" />
       <workItem from="1681389319704" duration="33697000" />
       <workItem from="1681483091397" duration="1792000" />
-      <workItem from="1681485192334" duration="28733000" />
+      <workItem from="1681485192334" duration="29227000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1681383505111</created>
@@ -154,7 +154,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681562493325</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="前后端分离的登陆注册忘记密码功能">
+      <created>1681563037331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681563037333</updated>
+    </task>
+    <task id="LOCAL-00008" summary="前后端分离的登陆注册忘记密码功能">
+      <created>1681563238079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681563238079</updated>
+    </task>
+    <task id="LOCAL-00009" summary="前后端分离的登陆注册忘记密码功能">
+      <created>1681563279650</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681563279650</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +187,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="SHOW_ROOT_NAMES" value="true" />
             </State>
           </value>
